@@ -11,13 +11,13 @@ class GemViewModel : ViewModel() {
         gemItems.value = mutableListOf()
     }
 
-    fun addTaskItem(newTask: GemItem) {
+    fun addGemItem(newGem: GemItem) {
         val list = gemItems.value
-        list!!.add(newTask)
+        list!!.add(newGem)
         gemItems.postValue(list)
     }
 
-    fun updateTaskItem(
+    fun updateGemItem(
         id: UUID,
         name: String,
         desc: String?,
@@ -26,12 +26,20 @@ class GemViewModel : ViewModel() {
         birthstone: String?
     ) {
         val list = gemItems.value
-        val task = list!!.find { it.id == id }!!
-        task.name = name
-        task.desc = desc
-        task.colour = colour
-        task.hardness = hardness
-        task.birthstone = birthstone
+        val gem = list!!.find { it.id == id }!!
+        gem.name = name
+        gem.desc = desc
+        gem.colour = colour
+        gem.hardness = hardness
+        gem.birthstone = birthstone
+        gemItems.postValue(list)
+    }
+
+    fun deleteItem(id: UUID) {
+        val list = gemItems.value
+        val gem = list!!.find { it.id == id }
+        list.remove(gem)
+
         gemItems.postValue(list)
     }
 }

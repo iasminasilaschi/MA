@@ -8,22 +8,22 @@ import com.example.mobilegemscollection.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), GemItemClickListener {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var taskViewModel: GemViewModel
+    private lateinit var gemViewModel: GemViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        taskViewModel = ViewModelProvider(this).get(GemViewModel::class.java)
+        gemViewModel = ViewModelProvider(this).get(GemViewModel::class.java)
         binding.newGemButton.setOnClickListener {
-            NewGemSheet(null).show(supportFragmentManager, "newTaskTag")
+            NewGemSheet(null).show(supportFragmentManager, "newGemTag")
         }
         setRecyclerView()
     }
 
     private fun setRecyclerView() {
         val mainActivity = this
-        taskViewModel.gemItems.observe(this) {
+        gemViewModel.gemItems.observe(this) {
             binding.gemsCollectionRecyclerView.apply {
                 layoutManager = LinearLayoutManager(applicationContext)
                 adapter = GemItemAdapter(it, mainActivity)
@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity(), GemItemClickListener {
         }
     }
 
-    override fun editTaskItem(taskItem: GemItem) {
-        NewGemSheet(taskItem).show(supportFragmentManager, "newTaskTag")
+    override fun editGemItem(gemItem: GemItem) {
+        NewGemSheet(gemItem).show(supportFragmentManager, "newGemTag")
     }
 }
 
