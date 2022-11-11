@@ -1,6 +1,7 @@
 package com.example.mobilegemscollection
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.os.Bundle
 import android.text.Editable
 import android.view.LayoutInflater
@@ -39,7 +40,19 @@ class NewGemSheet(var gemItem: GemItem?) : BottomSheetDialogFragment() {
             saveAction()
         }
         binding.deleteButton.setOnClickListener {
-            deleteAction()
+            val builder = AlertDialog.Builder(this.context)
+            builder.setMessage("Are you sure you want to Delete?")
+                .setCancelable(false)
+                .setPositiveButton("Yes") { dialog, id ->
+                    deleteAction()
+                }
+                .setNegativeButton("No") { dialog, id ->
+                    // Dismiss the dialog
+                    dialog.dismiss()
+                }
+            val alert = builder.create()
+            alert.show()
+//            deleteAction()
         }
     }
 
