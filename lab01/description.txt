@@ -1,0 +1,14 @@
+Descripton
+________________________________________________________________________________________________________
+
+In the Gemstone Collection app you will be able to add new gems that you have collected, update the 
+already added gems in your collection, remove gems from your collection and view your collection.
+
+You can add their name, description and a picture that would hardly amass their beauty. 
+
+Weather precious or semi-precious, each of the stones can have specified their color and hardness. 
+
+Moreover, if you are passionate about astrology, you will definitely enjoy finding out which gems are 
+the birthstones for your birth month!
+
+________________________________________________________________________________________________________

@@ -1,0 +1,56 @@
+CRUD
+________________________________________________________________________________________________________
+
+create
+_______
+
+A new entity of type Gemstone is created with the following parameters from user input:
+
+- name
+- description (optional)
+- photo (optional)
+- color (optional)
+- hardness (optional)
+- birthstone (optional)
+
+This action will be possible by clicking the + in the right bottom corner of the application on the 
+main page (my collection page).
+
+________________________________________________________________________________________________________
+
+read
+_______
+
+The collection of gemstones is displayed, which means a list of type Gemstone, containing all the 
+previously added gemstones.
+They will be displayed on the main page (my collection page).
+
+________________________________________________________________________________________________________
+
+update
+_______
+
+Updating any of the fields of a gem will be possible, therefore any of the following:
+
+- name
+- description
+- photo
+- color
+- hardness
+- birthstone
+
+This action can be performed by clicking on the respective field, changing it, 
+and clicking the “Edit” button that will appear when the field is clicked.
+
+________________________________________________________________________________________________________
+
+delete
+_______
+
+It will be possible to delete any of the gemstones from the personal collection that can be viewed on 
+the main page (my collection page).
+This action can be performed by swiping left on the name of the respective gem and clicking “yes” on 
+the confirmation pop-up that will follow, asking “are you sure you want to delete this gem from your 
+collection?”.
+
+________________________________________________________________________________________________________

@@ -1,0 +1,41 @@
+Persistence
+________________________________________________________________________________________________________
+
+create
+_______
+
+The data will be added:
+
+- to the server
+- to the local database
+
+________________________________________________________________________________________________________
+
+read
+_______
+
+The content from the server will be displayed to the user.
+
+The local database will be updated with the values from the server.
+
+________________________________________________________________________________________________________
+
+update
+_______
+
+The data will be updated:
+
+- on the server
+- on the local database
+
+________________________________________________________________________________________________________
+
+delete
+_______
+
+The element will be deleted:
+
+- from the server
+- from the local database
+
+________________________________________________________________________________________________________

@@ -1,0 +1,58 @@
+Domain
+______________________________________________________________________________________________________
+
+1. Gemstone
+______________
+💎 name
+______________
+The name is a string, uniquely identifying each gem in a collection.
+
+______________
+📑 description
+______________
+The description is a string, and it will contain various and diversified details about the gem. 
+For instance, if it is precious or semi-precious, the location from where it was obtained, its 
+wearability, transparency or any information the user wants to provide regarding the respective gem.
+
+______________
+📸 photo
+______________
+A gem can also have a photo which illustrates perhaps better than the description the way it looks 
+like.
+
+______________
+🎨 color
+______________
+The color is a string which describes the color of the gem, which could be either colorless or any 
+possible color.
+
+______________
+🪚 hardness
+______________
+The hardness is a float number between 1 and 10. This represents how hard the gem is, on a scale from
+ talc (1) to diamond (10).
+
+______________
+🔭 birthstone
+______________
+In the birthstone field will be stored the month the gem is the birthstone for.
+
+______________________________________________________________________________________________________
+
+2. User
+______________
+🗣️ name
+______________
+The name of the user, however they want it to appear on the application.
+
+______________
+✉️ email
+______________
+The email of the user, which will also serve as the unique identification of each user. 
+They will be required the email upon sing up and will use this credential to log into the application.
+
+______________
+🔑 password
+______________
+The password of the user, which they will be required upon sign up and will later on use in order to 
+log into the application.

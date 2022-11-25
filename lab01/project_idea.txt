@@ -1,0 +1,224 @@
+________________________________________________________________________________________________________
+
+Descripton
+________________________________________________________________________________________________________
+
+In the Gemstone Collection app you will be able to add new gems that you have collected, update the 
+already added gems in your collection, remove gems from your collection and view your collection.
+
+You can add their name, description and a picture that would hardly amass their beauty. 
+
+Weather precious or semi-precious, each of the stones can have specified their color and hardness. 
+
+Moreover, if you are passionate about astrology, you will definitely enjoy finding out which gems are 
+the birthstones for your birth month!
+
+
+________________________________________________________________________________________________________
+
+Domain
+________________________________________________________________________________________________________
+
+1. Gemstone
+______________
+💎 name
+______________
+The name is a string, uniquely identifying each gem in a collection.
+
+______________
+📑 description
+______________
+The description is a string, and it will contain various and diversified details about the gem. 
+For instance, if it is precious or semi-precious, the location from where it was obtained, its 
+wearability, transparency or any information the user wants to provide regarding the respective gem.
+
+______________
+📸 photo
+______________
+A gem can also have a photo which illustrates perhaps better than the description the way it looks 
+like.
+
+______________
+🎨 color
+______________
+The color is a string which describes the color of the gem, which could be either colorless or any 
+possible color.
+
+______________
+🪚 hardness
+______________
+The hardness is a float number between 1 and 10. This represents how hard the gem is, on a scale from
+ talc (1) to diamond (10).
+
+______________
+🔭 birthstone
+______________
+In the birthstone field will be stored the month the gem is the birthstone for.
+
+______________________________________________________________________________________________________
+
+2. User
+______________
+🗣️ name
+______________
+The name of the user, however they want it to appear on the application.
+
+______________
+✉️ email
+______________
+The email of the user, which will also serve as the unique identification of each user. 
+They will be required the email upon sing up and will use this credential to log into the application.
+
+______________
+🔑 password
+______________
+The password of the user, which they will be required upon sign up and will later on use in order to 
+log into the application.
+
+
+________________________________________________________________________________________________________
+
+CRUD
+________________________________________________________________________________________________________
+
+create
+_______
+
+A new entity of type Gemstone is created with the following parameters from user input:
+
+- name
+- description (optional)
+- photo (optional)
+- color (optional)
+- hardness (optional)
+- birthstone (optional)
+
+This action will be possible by clicking the + in the right bottom corner of the application on the 
+main page (my collection page).
+
+________________________________________________________________________________________________________
+
+read
+_______
+
+The collection of gemstones is displayed, which means a list of type Gemstone, containing all the 
+previously added gemstones.
+They will be displayed on the main page (my collection page).
+
+________________________________________________________________________________________________________
+
+update
+_______
+
+Updating any of the fields of a gem will be possible, therefore any of the following:
+
+- name
+- description
+- photo
+- color
+- hardness
+- birthstone
+
+This action can be performed by clicking on the respective field, changing it, 
+and clicking the “Edit” button that will appear when the field is clicked.
+
+________________________________________________________________________________________________________
+
+delete
+_______
+
+It will be possible to delete any of the gemstones from the personal collection that can be viewed on 
+the main page (my collection page).
+This action can be performed by swiping left on the name of the respective gem and clicking “yes” on 
+the confirmation pop-up that will follow, asking “are you sure you want to delete this gem from your 
+collection?”.
+
+
+________________________________________________________________________________________________________
+
+Persistence
+________________________________________________________________________________________________________
+
+create
+_______
+
+The data will be added:
+
+- to the server
+- to the local database
+
+________________________________________________________________________________________________________
+
+read
+_______
+
+The content from the server will be displayed to the user.
+
+The local database will be updated with the values from the server.
+
+________________________________________________________________________________________________________
+
+update
+_______
+
+The data will be updated:
+
+- on the server
+- on the local database
+
+________________________________________________________________________________________________________
+
+delete
+_______
+
+The element will be deleted:
+
+- from the server
+- from the local database
+
+
+________________________________________________________________________________________________________
+
+Offline
+________________________________________________________________________________________________________
+
+create
+_______
+
+The user will still be able to create entities.
+
+The created entities will be persisted in the local database.
+
+When the device is connected to the internet, it will push the newly created entities while offline to 
+the server.
+
+________________________________________________________________________________________________________
+
+read
+_______
+
+The content from the local database will still be shown to the user, alongside a message that will 
+inform the user that the device is offline.
+
+When the device is connected to the internet, the data will be updated.
+
+________________________________________________________________________________________________________
+
+update
+_______
+
+The user will not be able to update entities.
+
+A message will inform the user that this operation is not available because the device is not connected
+to the internet.
+
+________________________________________________________________________________________________________
+
+delete
+_______
+
+The user will still be able to perform the delete operation.
+
+The deleted entities will be persisted in the local database and will also be deleted from the server 
+once the device is back online.
+________________________________________________________________________________________________________

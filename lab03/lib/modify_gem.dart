@@ -61,7 +61,7 @@ class _ModifyGem extends State<ModifyGem> {
                   onPressed: () {
                     String name = controllerName.text;
                     String description = controllerDescription.text;
-                    String color = controllerBirthstone.text;
+                    String color = controllerColor.text;
                     String hardness = controllerHardness.text;
                     String birthstone = controllerBirthstone.text;
 

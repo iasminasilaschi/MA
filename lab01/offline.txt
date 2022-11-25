@@ -1,0 +1,43 @@
+Offline
+________________________________________________________________________________________________________
+
+create
+_______
+
+The user will still be able to create entities.
+
+The created entities will be persisted in the local database.
+
+When the device is connected to the internet, it will push the newly created entities while offline to 
+the server.
+
+________________________________________________________________________________________________________
+
+read
+_______
+
+The content from the local database will still be shown to the user, alongside a message that will 
+inform the user that the device is offline.
+
+When the device is connected to the internet, the data will be updated.
+
+________________________________________________________________________________________________________
+
+update
+_______
+
+The user will not be able to update entities.
+
+A message will inform the user that this operation is not available because the device is not connected
+to the internet.
+
+________________________________________________________________________________________________________
+
+delete
+_______
+
+The user will still be able to perform the delete operation.
+
+The deleted entities will be persisted in the local database and will also be deleted from the server 
+once the device is back online.
+________________________________________________________________________________________________________
