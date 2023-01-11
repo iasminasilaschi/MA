@@ -1,0 +1,4 @@
+#Fri Dec 16 08:54:14 EET 2022
+base.0=C\:\\Users\\Iasmina\\Documents\\GitHub\\MA\\lab04\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
